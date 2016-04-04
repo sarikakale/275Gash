@@ -91,7 +91,7 @@ public class WorkHandler extends SimpleChannelInboundHandler<WorkMessage> {
 
 			// TODO How can you implement this without if-else statements?
 			try {
-
+				logger.info(" "+msg);
 				if (msg.hasBeat()) {
 					Heartbeat hb = msg.getBeat();
 					logger.info("heartbeat from " + msg.getHeader().getNodeId());
