@@ -16,7 +16,7 @@ import pipe.work.Work.WorkMessage;
 
 public class LeaderElectionThread implements Runnable{
 	Map<Integer, EdgeInfo> map;
-	final public static int minMumberOfNodes = 2;
+	final public static int minMumberOfNodes = 3;
 	ClusterInfo clusterInfo;
 	public LeaderElectionThread(ServerState state){
 		this.clusterInfo = state.getClusterInfo();
