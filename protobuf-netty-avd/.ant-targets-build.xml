@@ -1,0 +1,7 @@
+build
+build.test
+clean
+hello
+init
+server
+test.hello
